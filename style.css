@@ -18,46 +18,65 @@ body {
 .services {
 	display: inline-flex;
 }
-.search,
+.search-web,
 .menu-topbar,
 .right {
     text-align: right;
 }
-a {
+.latest-content a,
+.about a,
+.blog a,
+.footer-col a,
+.footer-list a,
+.main-menu a,
+.menu-topbar a {
 	text-decoration: none;
 }
-h1 {
+.logo h1 {
 	font-size: 26px;
 	color: #fff;
 	text-transform: uppercase;
 }
-span {
+.logo span {
 	font-size: 12px;
 	color: #999999;
 	text-transform: capitalize;
 	line-height: 30px;
 }
-button {
+.footer-btn,
+.search-btn {
 	border-width: 0px;
 	padding: 10px;
 	border-radius: 0px 5px 5px 0px;
 	background-color: #4c555e;
 	color: #fff;
 }
-button:hover {
+.footer-btn:hover,
+.search-btn:hover {
 	background-color: red;
 }
-button:active {
+.footer-btn:active,
+.search-btn:active {
 	background-color: blue;
 }
-input {
+.footer-input,
+.search-input {
 	border-width: 0px;
 	padding: 10px 30px 10px 10px;
 	border-radius: 5px 0px 0px 5px;
 }
-input::placeholder {
+.footer-input::placeholder,
+.search-input::placeholder {
 	font-family: Georgia;
 	text-transform: capitalize;
+}
+.footer-btn,
+.search-btn {
+    background-color: #373c42;
+    color: #fff;
+}
+.search-input::placeholder {
+	color: #fff;
 }
 /* topbar style*/
 .social-icon,
@@ -87,10 +106,24 @@ input::placeholder {
 .fa-google:hover,
 .fa-wifi:hover,
 .fa-pinterest:hover{
-	background-color: #c8232c;
 	width: 30px;
     height: 30px;
     border-radius: 50%;
+}
+.fa-linkedin:hover {
+	background-color: #0e76a8;
+}
+.fa-twitter:hover {
+	background-color: #00acee;
+}
+.fa-google:hover {
+	background-color: #db4a39;
+}
+.fa-wifi:hover {
+	background-color: #ee802f;
+}
+.fa-pinterest:hover {
+    background-color: #c8232c;
 }
 .menu-topbar a{
 	font-size: 12px;
@@ -109,14 +142,14 @@ input::placeholder {
 }
 /* header style*/
 .logo,
-.search {
+.search-web {
 	width: 50%;
 }
-.header {
+.header-logo {
    background-color: #4c555e;
    padding: 50px 0px 90px 0px;
 }
-.search {
+.search-web {
 	padding-bottom: 50px;
 	padding-top: 12px;
 }
@@ -231,7 +264,7 @@ input::placeholder {
 	border-top: 1px solid #e2e2e2;
 	border-bottom: 1px solid #e2e2e2;
 }
-blockquote {
+.shout blockquote {
 	width: 100%;
 	color: #7f7d77;
 	font-size: 18px;
@@ -290,7 +323,7 @@ blockquote {
 	width: 100%;
 }
 /* footer style*/
-.footer {
+.footer-content {
 	background-color: #ededed;
 	border-top: 5px solid #e2e2e2;
 	padding: 10px 0 30px 0px;
@@ -329,7 +362,7 @@ blockquote {
 	border-radius: 5px;
 	text-transform: uppercase;
 }
-h5 {
+.blog h5 {
 	color: #7f7d77;
 	font-size: 14px;
 }
@@ -351,27 +384,20 @@ h5 {
 .blog p {
 	padding: 10px 0;
 }
-.search-btn {
-    background-color: #373c42;
-    color: #fff;
-}
-input::placeholder {
-	color: #fff;
-}
 /*  copyright*/
 .copyright {
 	background-color: #ededed;
 	border-top: 2px solid #bcbcbc;
 	padding: 25px 0;	
 }
-.left,
-.right {
+.copyright1,
+.copyright2 {
 	width: 50%;
 	color: #7f7d77;
 }
-.left {
+.copyright1 {
 	text-align: left;
 }
-.right {
+.copyright2 {
 	text-align: right;
 }
